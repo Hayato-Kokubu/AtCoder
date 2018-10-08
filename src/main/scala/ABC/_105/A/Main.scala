@@ -1,12 +1,16 @@
 package ABC._105.A
 //↑実行時には外す
 
+import scala.io.StdIn
+
 object Main{
 	def main(args: Array[String]): Unit = {
 
-		val N = 105
+		val N = StdIn.readLine.toInt
 
-		val result: Int = diviserNum(N)
+		val result: Int =
+			(1 to N).filter( _ % 2 == 1)
+				      .count( num => diviserNum(num) == 8)
 		println(result)
 	}
 
