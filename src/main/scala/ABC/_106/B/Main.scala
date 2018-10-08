@@ -1,4 +1,4 @@
-package ABC._105.B
+package ABC._106.B
 
 object Main{
 	def main(args: Array[String]): Unit = {

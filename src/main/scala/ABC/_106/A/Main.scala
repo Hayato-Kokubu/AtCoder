@@ -1,4 +1,4 @@
-package ABC._105.A
+package ABC._106.A
 //↑実行時には外す
 
 import scala.io.StdIn
