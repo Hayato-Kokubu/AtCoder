@@ -1,8 +1,20 @@
-package ABC._109.B
+//package ABC._109.B
+
+import scala.io.StdIn
 
 object Main {
 	def main(args: Array[String]): Unit ={
+		val N = StdIn.readLine.toInt
 
+		val wordList = (1 to N).foldLeft(Seq.empty[String]){ (list, num) =>
+			val addStr = StdIn.readLine
+			list :+ addStr
+		}
+
+		// 2回ルール実装なし
+		val result = wordList.foldLeft((true, wordList(0).head) ){ (tuple, str) =>
+			( tuple._1 && tuple._2 == str.head, str.last )
+		}
+		println(if(result._1) "Yes" else "No")
 	}
-
 }
