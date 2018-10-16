@@ -11,10 +11,10 @@ object Main {
 			list :+ addStr
 		}
 
-		// 2回ルール実装なし
-		val result = wordList.foldLeft((true, wordList(0).head) ){ (tuple, str) =>
+		val distinctFlg = wordList.length == wordList.distinct.length
+		lazy val result = wordList.foldLeft((true, wordList(0).head) ){ (tuple, str) =>
 			( tuple._1 && tuple._2 == str.head, str.last )
 		}
-		println(if(result._1) "Yes" else "No")
+		println(if(distinctFlg && result._1 ) "Yes" else "No")
 	}
 }
