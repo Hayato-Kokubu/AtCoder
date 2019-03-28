@@ -6,13 +6,10 @@ object Main {
     val s  = sc.next
     val ss = s.split("(?<=.)")
 
-    val na = s.count(_ == "A")
-    val nb = s.count(_ == "B")
-    val nc = s.count(_ == "C")
-    val nd = s.count(_ == "D")
-    val ne = s.count(_ == "E")
-    val nf = s.count(_ == "F")
+    val resl = List("A", "B", "C", "D", "E", "F").map{c => ss.count(_ == c)}
 
-    println(s"$na, $nb, $nc, $nd, $ne, $nf")
+    // 末尾のスペースが余分
+    resl.foreach{res => print(s"$res")}
+    println
   }
 }
