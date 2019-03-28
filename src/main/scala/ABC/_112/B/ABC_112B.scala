@@ -2,7 +2,7 @@
 
 import scala.io.StdIn
 
-object Main {
+object ABC_112B {
 	def main(args: Array[String]): Unit ={
 		val num = StdIn.readLine.split(" ").map(_.toInt)
 		val N = num(0)

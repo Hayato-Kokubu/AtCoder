@@ -2,7 +2,7 @@
 
 import scala.io.StdIn
 
-object Sample {
+object ABC_112B_Sample {
 	def main(args: Array[String]) ={
 		val num = StdIn.readLine.split(" ").map(_.toInt)
 		val N = num(0)

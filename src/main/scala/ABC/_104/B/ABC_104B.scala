@@ -2,7 +2,7 @@ package ABC._104.B
 
 import scala.io.StdIn
 
-object Main {
+object ABC_104B {
 	def main(args: Array[String]): Unit ={
 		val S = StdIn.readLine
 

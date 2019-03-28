@@ -1,6 +1,6 @@
 package ABC._106.B
 
-object Main{
+object ABC_106B{
 	def main(args: Array[String]): Unit = {
 	}
 }

@@ -3,7 +3,7 @@ package ABC._106.A
 
 import scala.io.StdIn
 
-object Main{
+object ABC_106A{
 	def main(args: Array[String]): Unit = {
 
 		val N = StdIn.readLine.toInt

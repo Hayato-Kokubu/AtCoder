@@ -2,7 +2,7 @@
 
 import scala.io.StdIn
 
-object Main {
+object ABC_110A {
 	def main(args: Array[String]): Unit = {
 		val num = StdIn.readLine.split(" ").map(_.toInt).sortWith(_ > _)
 

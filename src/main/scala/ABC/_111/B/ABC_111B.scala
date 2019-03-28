@@ -2,7 +2,7 @@
 
 import scala.io.StdIn
 
-object Main {
+object ABC_111B {
 	def main(args: Array[String])={
 		val N = StdIn.readInt
 

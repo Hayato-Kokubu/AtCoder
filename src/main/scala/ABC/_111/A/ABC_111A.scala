@@ -2,7 +2,7 @@ package ABC._111.A
 
 import scala.io.StdIn
 
-object Main {
+object ABC_111A {
 	def main(args: Array[String]){
 		val num = StdIn.readLine.toCharArray
 		val hundred = num(0)
