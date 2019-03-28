@@ -1,5 +1,5 @@
 object Main {
   def main (args: Array[String]): Unit={
-    println("Hello AtCoder!!")
+    println(Samples.gcd(12, 18))
   }
 }
