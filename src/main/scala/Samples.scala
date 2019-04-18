@@ -18,6 +18,10 @@ object Samples {
     }
     loop(n,List.empty[Int])
   }
+  // mkString
+
+  // foldの逆 unfold なるメソッドがある
+  // 1つの数値から、Listを作る
 
   /*
   * @param  a : Int a >= 1
@@ -44,3 +48,6 @@ object Samples {
     }
   }
 }
+
+// List(a,a,a,b,b,c, a,a) => List(List(a,a,a),List(b,b), List(c), List(a,a))
+//
