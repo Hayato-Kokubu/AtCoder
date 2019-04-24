@@ -47,6 +47,12 @@ object Samples {
         else list :+ (list.last + acc)
     }
   }
+
+  def factorial(n: Int, mod: Int): Long ={ // 戻り値Int ではオーバーブローしてしまうので、Longで計算
+    (1 to n).foldLeft(1L){(fact, k) =>
+      fact * k % mod
+    }
+  }
 }
 
 // List(a,a,a,b,b,c, a,a) => List(List(a,a,a),List(b,b), List(c), List(a,a))
