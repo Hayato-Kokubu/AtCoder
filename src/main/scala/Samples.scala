@@ -53,6 +53,18 @@ object Samples {
       fact * k % mod
     }
   }
+
+
+  // 素数判定
+  // O(N^(1/2))
+  def isPrime(num: Int): Boolean = {
+    num match {
+      case 1 => false
+      case 2 => true
+      case x => (2 to Math.sqrt(x).toInt).forall(num % _ != 0 )
+    }
+  }
+
 }
 
 // List(a,a,a,b,b,c, a,a) => List(List(a,a,a),List(b,b), List(c), List(a,a))
